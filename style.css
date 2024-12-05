@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+*{
+    font-family: "Parkinsans", sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.display-f{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.timer-button{
+    border: none;
+    border-radius: 4px;
+    background: white;
+    color: black;
+    padding: 4px 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+
+#total_player{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 20px;
+}
+.timer-button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.display-none{
+    display: none;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 70px;
+}
+
+.endgame{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: #666;
+    margin-left: -325px;
+    display: none;
+    border-radius: 12px;
+}
+
+.replay{
+    margin-left: 107px;
+    margin-bottom: 20px;
+    background: #0059ff;
+    color: white;
+    width: 16vw;
+    height: 4vw;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    transition: .2s all;
+    cursor: pointer;
+}
+.replay:hover{
+    background-color: #0249cc;
+}
+
+#name{
+    text-align: center; 
+    color: white; 
+    font-size: 30px; 
+    margin-top: 70px;
+}
+
+
+.black-timer{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    background-color: grey;
+    color: white;
+    
+    text-align: center;
+    font-size: 60px;
+    border-radius: 12px;
+}
+.top{
+    right: 350px;
+    top: 90px;
+
+}
+.white-timer{
+    position: absolute;
+  width: 200px;
+    height: 100px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 12px;
+    color:black;
+    text-align: center;
+    font-size: 60px;
+}
+
+.bottom{
+    top: 460px;
+    right: 350px;
+  
+}

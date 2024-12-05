@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Multiplayer - 2024</title>
+
+    <link rel="stylesheet" href="./lib/chessboardjs/css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p id="total_player">Total_Players: <span class="total_player">0</span></p>
+    <h2 style="text-align: center;">Chess Game</h3>
+    <div id="main_elem" class="display-f">
+    <div id="board1" style="width: 500px;">
+ 
+    </div>
+    <div class="endgame"><h3 style="color: white;" id="name"></h3><button class="replay" onclick="location.reload()">Replay</button></div>
+    <div class="buttons" style="display: flex;gap: 20px;">
+        <button data-time = "10" class="timer-button">10 Min.</button>
+        <button data-time = "15" class="timer-button">15 Min.</button>
+        <button data-time = "20" class="timer-button">20 Min.</button>
+
+    </div>
+    <div style="display: none;" class="right">
+        <div class="top"></div>
+        <div class="bottom"></div>
+
+        <h3  id="move"></h3>
+
+    </div>
+ 
+</div>
+
+<p id="waitText" class="display-none">Waiting for Opponent to Join....</p>
+<script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js" integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./lib/chessboardjs/js/chessboard-1.0.0.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
