@@ -1,9 +1,14 @@
+const express = require('express');
+const app = express();
 
+app.get('/', (req, res) => {
+    res.send('Server is running');
+});
 const { createServer } = require("http");
 const { Server } = require("socket.io");
 var opponentId;
 var socketid;
-const httpServer=  createServer();
+const httpServer=  createServer(app);
 const io = new Server(httpServer,{
     cors: {
         origin: "*",
