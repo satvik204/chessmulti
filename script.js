@@ -192,6 +192,7 @@ if (matchMade) {
                 no = 2;
             }else{
                 timer2.resume();
+                timer1.pause();
             }
         }else{
             timer2.pause();
