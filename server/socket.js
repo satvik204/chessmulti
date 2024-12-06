@@ -1,6 +1,6 @@
 
 const { createServer } = require("http");
-const { Server } = require('socket.io');
+const { Server } = require("socket.io");
 var opponentId;
 var socketid;
 const httpServer=  createServer();
