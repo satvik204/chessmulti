@@ -109,4 +109,7 @@ fireConnect(socket);
 socket.on('move_made',array => moveMade(array))
 })
 
-httpServer.listen(8000)
+const PORT = process.env.PORT || 8000; // Default to 8000 for local testing
+httpServer.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
