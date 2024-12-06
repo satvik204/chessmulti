@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/tester', (req, res) => {
     res.send('Server is running');
 });
 const { createServer } = require("http");

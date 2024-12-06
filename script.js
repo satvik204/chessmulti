@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 })
 
-const socket = io('http://localhost:8000');
+const socket = io('https://chessmulti.onrender.com');
 console.log(socket)
 
 socket.on('total_players', (totalPlayers) => {
