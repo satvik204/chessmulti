@@ -91,6 +91,10 @@ function onDragStart(source, piece, position, orientation) {
         return false;
     }
 
+    if (event && event.preventDefault) {
+        event.preventDefault();
+      }
+
 }
 
 function onDrop(source, target) {
