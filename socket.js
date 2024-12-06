@@ -109,7 +109,7 @@ fireConnect(socket);
 socket.on('move_made',array => moveMade(array))
 })
 
-const PORT = process.env.PORT || 8000; // Default to 8000 for local testing
-httpServer.listen(PORT, () => {
+const PORT = process.env.PORT || 8000; // Use Render's assigned port or default to 8000 for local testing
+httpServer.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is running on port ${PORT}`);
 });
