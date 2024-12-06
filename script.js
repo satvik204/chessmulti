@@ -191,8 +191,9 @@ if (matchMade) {
             document.getElementById("move").innerHTML = winnerText; });
                 no = 2;
             }else{
-                timer2.resume();
                 timer1.pause();
+
+                timer2.resume();
             }
         }else{
             timer2.pause();
